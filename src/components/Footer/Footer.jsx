@@ -53,12 +53,20 @@ const Footer = () => {
             <ul className="space-y-3 text-black">
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-samosa-orange mt-1" />
-                <span className="text-black text-sm">Main Bazar, Chandni Chowk, Old Delhi - 110006</span>
+                <span className="text-black text-sm">nearby-excellence tech. phase-8 mohali - 110006</span>
               </li>
-              <li className="flex items-center gap-3">
-                <FaPhone className="text-samosa-orange" />
-                <span className="text-black text-sm">+91 98765 43210</span>
-              </li>
+             <li className="flex items-center gap-3">
+  <FaPhone className="text-samosa-orange" />
+
+  <a
+    href="https://wa.me/917526832341"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-black text-sm hover:text-green-600 transition-colors"
+  >
+    +91 75268 32341
+  </a>
+</li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-samosa-orange" />
                 <span className="text-black text-sm">info@rahulsamosabala.com</span>

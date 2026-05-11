@@ -56,10 +56,26 @@ const ContactForm = () => {
                     <FaPhone className="text-samosa-orange text-xl" />
                   </div>
                   <div>
-                    <h4 className="font-bold mb-1">Phone Number</h4>
-                    <p className="text-gray-600">+91 98765 43210</p>
-                    <p className="text-gray-600">+91 98765 43211</p>
-                  </div>
+  <h4 className="font-bold mb-1">Phone Number</h4>
+
+  <a
+    href="https://wa.me/917526832341"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block text-gray-600 hover:text-green-600 transition-colors"
+  >
+    +91 75268 32341
+  </a>
+
+  <a
+    href="https://wa.me/917526832341"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block text-gray-600 hover:text-green-600 transition-colors"
+  >
+    WhatsApp Support
+  </a>
+</div>
                 </div>
 
                 <div className="flex items-start gap-4">
@@ -68,7 +84,14 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">WhatsApp</h4>
-                    <p className="text-gray-600">+91 98765 43210</p>
+                   <a
+  href="https://wa.me/917526832341"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-600 hover:text-green-600 transition-colors"
+>
+     +91   75268 32341
+</a>
                     <button 
                       onClick={handleWhatsAppClick}
                       className="text-samosa-orange font-semibold text-sm hover:underline mt-1"

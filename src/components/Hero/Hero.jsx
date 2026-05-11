@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   const handleWhatsAppOrder = () => {
-    window.open('https://wa.me/919876543210?text=Hi%20Rahul%20Samosa%20Bala%2C%20I%20want%20to%20place%20an%20order', '_blank')
+    window.open('https://wa.me/7526832341?text=Hi%20Rahul%20Samosa%20Bala%2C%20I%20want%20to%20place%20an%20order', '_blank')
   }
 
   return (
@@ -56,10 +56,13 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <button onClick={handleWhatsAppOrder} className="btn-primary flex items-center justify-center gap-2 text-white">
-              <FaWhatsapp className="text-xl text-white" />
-              Order on WhatsApp
-            </button>
+            <button
+  onClick={handleWhatsAppOrder}
+  className="btn-primary flex items-center justify-center gap-2 text-white"
+>
+  <FaWhatsapp className="text-xl text-white" />
+  Order on WhatsApp
+</button>
             <Link to="/menu">
   <button className="btn-secondary bg-white bg-opacity-20 backdrop-blur-sm text-black border-white">
     View Menu
