@@ -103,14 +103,14 @@ const ContactForm = () => {
 
               {/* Map */}
               <div className="mt-8">
-                <iframe 
-                  title="Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.756415812472!2d77.226173!3d28.660888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd8b5c1f9b8b%3A0x9a8e5c3f2e7b6a4d!2sChandni%20Chowk!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                  className="w-full h-64 rounded-lg"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                ></iframe>
+                <iframe
+  title="Location Map"
+  src="https://www.google.com/maps?q=8,+Excellence Technology,+Phase-8,+Industrial+Area,+Sahibzada+Ajit+Singh+Nagar,+Punjab+160055&output=embed"
+  className="w-full h-64 rounded-lg"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+></iframe>
               </div>
             </div>
           </motion.div>

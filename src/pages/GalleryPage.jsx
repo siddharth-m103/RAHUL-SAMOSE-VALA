@@ -64,7 +64,7 @@ const GalleryPage = () => {
                 className={`px-6 py-2 rounded-full capitalize transition-all duration-300 ${
                   activeCategory === category
                     ? 'bg-samosa-orange text-white'
-                    : 'bg-white text-gray-700 hover:bg-samosa-orange hover:text-white'
+                    : 'bg-white text-gray-700 hover:bg-samosa-orange hover:text-black'
                 }`}
               >
                 {category}

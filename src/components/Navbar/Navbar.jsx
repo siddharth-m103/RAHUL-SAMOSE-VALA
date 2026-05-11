@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes,FaWhatsapp } from 'react-icons/fa'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -48,9 +48,18 @@ const Navbar = () => {
           </div>
 
           {/* Order Button */}
-          <button className="hidden md:block btn-primary text-sm">
-            Order Now
-          </button>
+         <button
+  onClick={() => {
+    window.open(
+      "https://wa.me/917526832341?text=Hello%20Rahul%20Samosa%2C%20I%20want%20to%20place%20an%20order.",
+      "_blank"
+    )
+  }}
+  className="hidden md:flex items-center gap-2 btn-primary text-sm"
+>
+  <FaWhatsapp />
+  Order Now
+</button>
 
           {/* Mobile Menu Button */}
           <button

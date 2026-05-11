@@ -10,7 +10,7 @@ const Testimonials = () => {
       location: 'Delhi',
       rating: 5,
       text: 'Best samosas in town! The crispy exterior and delicious filling are absolutely perfect. I order from Rahul Samosa every week!',
-      image: '/images/testimonials/person1.jpg'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZIip6kBAwFR2di-OEbAIah7ELDMzmqvcL0Q&s'
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const Testimonials = () => {
       location: 'Noida',
       rating: 5,
       text: 'Authentic taste that reminds me of my childhood. Their special chutney is amazing! Highly recommended for samosa lovers.',
-      image: '/images/testimonials/person2.jpg'
+      image: 'https://img.freepik.com/free-photo/happy-boy-with-adorable-smile_23-2149352352.jpg?semt=ais_hybrid&w=740&q=80'
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const Testimonials = () => {
       location: 'Gurgaon',
       rating: 4,
       text: 'Great quality and hygiene. The paneer samosa is my favorite. Quick delivery through WhatsApp order is very convenient.',
-      image: '/images/testimonials/person3.jpg'
+      image: 'https://mastdp.in/wp-content/uploads/profile-cute-girl-pic-6.webp'
     }
   ]
 

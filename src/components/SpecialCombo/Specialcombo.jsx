@@ -27,9 +27,30 @@ const SpecialCombo = () => {
     }
   ]
 
+  // ✅ WhatsApp Function
+  const handleWhatsAppOrder = (combo) => {
+    const message = `
+🍴 Hello, I want to order this combo:
+
+📦 Combo Name: ${combo.name}
+
+📝 Items:
+${combo.items.map((item) => `• ${item}`).join('\n')}
+
+💰 Price: ${combo.price}
+
+Thank you!
+    `
+
+    const whatsappUrl = `https://wa.me/7526832341?text=${encodeURIComponent(message)}`
+
+    window.open(whatsappUrl, '_blank')
+  }
+
   return (
     <section className="py-20 bg-gradient-to-r from-orange-50 to-red-50">
       <div className="container mx-auto px-4">
+        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -40,8 +61,12 @@ const SpecialCombo = () => {
           <div className="flex justify-center mb-4">
             <FaGift className="text-5xl text-samosa-orange animate-bounce" />
           </div>
+
           <h2 className="section-title">Special Combos</h2>
-          <p className="section-subtitle">Get more value with our amazing combo offers!</p>
+
+          <p className="section-subtitle">
+            Get more value with our amazing combo offers!
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -54,30 +79,50 @@ const SpecialCombo = () => {
               viewport={{ once: true }}
               className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all hover:scale-105"
             >
-              <div className="bg-samosa-orange text-black p-4 text-center">
-                <h3 className="text-2xl font-playfair font-bold">{combo.name}</h3>
-              </div>
               
+              <div className="bg-samosa-orange text-black p-4 text-center">
+                <h3 className="text-2xl font-playfair font-bold">
+                  {combo.name}
+                </h3>
+              </div>
+
               <div className="p-6">
+                
                 <ul className="space-y-2 mb-6">
                   {combo.items.map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-gray-600">
+                    <li
+                      key={idx}
+                      className="flex items-center gap-2 text-gray-600"
+                    >
                       <span className="w-2 h-2 bg-orange rounded-full"></span>
                       {item}
                     </li>
                   ))}
                 </ul>
-                
+
                 <div className="text-center mb-4">
-                  <span className="text-3xl font-bold text-samosa-orange">{combo.price}</span>
-                  <span className="text-gray-400 line-through ml-2">{combo.originalPrice}</span>
-                  <div className="text-sm text-green-600 font-semibold mt-1">{combo.saving}</div>
+                  <span className="text-3xl font-bold text-samosa-orange">
+                    {combo.price}
+                  </span>
+
+                  <span className="text-gray-400 line-through ml-2">
+                    {combo.originalPrice}
+                  </span>
+
+                  <div className="text-sm text-green-600 font-semibold mt-1">
+                    {combo.saving}
+                  </div>
                 </div>
-                
-                <button className="w-full btn-primary flex items-center justify-center gap-2">
+
+                {/* ✅ WhatsApp Button */}
+                <button
+                  onClick={() => handleWhatsAppOrder(combo)}
+                  className="w-full btn-primary flex items-center justify-center gap-2"
+                >
                   <FaWhatsapp />
                   Order Combo
                 </button>
+
               </div>
             </motion.div>
           ))}

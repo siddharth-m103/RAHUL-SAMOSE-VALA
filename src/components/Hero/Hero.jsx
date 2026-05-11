@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FaWhatsapp, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const handleWhatsAppOrder = () => {
@@ -37,7 +38,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-3xl md:text-5xl font-bold text-samosa-orange mb-6"
           >
-            Rahul Samosa Bala
+            Rahul Samosa Vala
           </motion.h2>
           
           <motion.p 
@@ -59,9 +60,11 @@ const Hero = () => {
               <FaWhatsapp className="text-xl text-white" />
               Order on WhatsApp
             </button>
-            <button className="btn-secondary bg-white bg-opacity-20 backdrop-blur-sm text-black border-white">
-              View Menu
-            </button>
+            <Link to="/menu">
+  <button className="btn-secondary bg-white bg-opacity-20 backdrop-blur-sm text-black border-white">
+    View Menu
+  </button>
+</Link>
           </motion.div>
 
           {/* Features */}
@@ -73,7 +76,7 @@ const Hero = () => {
           >
             <div className="flex items-center justify-center gap-3 text-white">
               <FaMapMarkerAlt className="text-samosa-orange text-xl" />
-              <span>Main Bazar, Old Delhi</span>
+              <span>Phase-8, Mohali</span>
             </div>
             <div className="flex items-center justify-center gap-3 text-white">
               <FaClock className="text-samosa-orange text-xl" />
@@ -81,7 +84,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center justify-center gap-3 text-white">
               <FaWhatsapp className="text-samosa-orange text-xl" />
-              <span>+91 98765 43210</span>
+              <span>+91 7526832341</span>
             </div>
           </motion.div>
         </div>
